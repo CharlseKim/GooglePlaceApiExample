@@ -58,7 +58,7 @@ public class GetNearbyPlacesData extends AsyncTask<Object,String,String>{
             double lng = Double.parseDouble(googlePlace.get("lng"));
 
             LatLng latLng = new LatLng(lat,lng);
-            markerOptions.position(new LatLng(latLng));
+            markerOptions.position(latLng);
             markerOptions.title(placeName + " : " + vicinty);
             markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE));
 
